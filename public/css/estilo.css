@@ -70,6 +70,23 @@ article>ul li::before{
   margin-right: 5px;
 }
 
+.image-container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.image-container>img{
+  background-color: #e2ebee;
+  width: 30%;
+  max-height: 230px;
+  object-fit: contain;
+  border-bottom: 4px solid #a8b4b8;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 .buttons{
   display: flex;
 }
@@ -89,3 +106,4 @@ article>ul li::before{
   background-color: var(--b);
   color: white;
 }
+
