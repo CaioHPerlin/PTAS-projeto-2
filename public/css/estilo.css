@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root{
+  --b: rgb(255, 108, 108);
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -29,11 +33,21 @@ section>*{
 
 h1{
   padding-top: 0;
+  width: fit-content;
+  height: fit-content;
+  background-image: linear-gradient(180deg, rgb(17, 34, 46), rgb(8, 51, 82));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 section>p{
   text-align: justify;
   border-top: 2px solid #a8b4b8;
+}
+
+section>p>b{
+  color: var(--b);
 }
 
 article>ul{
@@ -64,14 +78,14 @@ article>ul li::before{
   flex: 50%;
   text-align: center;
   text-decoration: none;
-  color: black;
   font-size: 32px;
-  transition: 0.3s;
-  background-color: white;
   padding: 5px;
   border-radius: 15px;
+  color: var(--b);
+  transition: 0.3s;
 }
 
 .buttons>a:hover{
-  background-color: rgb(255, 182, 182);
+  background-color: var(--b);
+  color: white;
 }
